@@ -21,7 +21,7 @@ parameters:
   - name: agent_pool
     type: object
     default:
-      name: 'ci-agent-pool'
+      name: 'Azure Pipelines'
 
   - name: variable_group_name
     type: string
