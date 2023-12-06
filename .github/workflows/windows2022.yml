@@ -6,6 +6,7 @@ on:
     types: labeled
     paths:
     - 'images/windows/**'
+  workflow_dispatch:
 
 defaults:
   run:
