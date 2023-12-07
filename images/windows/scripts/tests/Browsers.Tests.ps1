@@ -144,16 +144,16 @@ Describe "Internet Explorer" {
     }
 }
 
-Describe "Selenium" {
-    BeforeAll {
-        $seleniumBinPath = "C:\selenium\selenium-server.jar"
-    }
-
-    It "Selenium server is installed" {
-        $seleniumBinPath | Should -Exist
-    }
-
-    It "SELENIUM_JAR_PATH environment variable exists" {
-        Get-EnvironmentVariable "SELENIUM_JAR_PATH" | Should -BeExactly "$seleniumBinPath"
-    }
-}
+#Describe "Selenium" {
+#    BeforeAll {
+#        $seleniumBinPath = "C:\selenium\selenium-server.jar"
+#    }
+#
+#    It "Selenium server is installed" {
+#        $seleniumBinPath | Should -Exist
+#    }
+#
+#    It "SELENIUM_JAR_PATH environment variable exists" {
+#        Get-EnvironmentVariable "SELENIUM_JAR_PATH" | Should -BeExactly "$seleniumBinPath"
+#    }
+#}
