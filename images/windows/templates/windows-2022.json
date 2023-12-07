@@ -16,7 +16,7 @@
         "virtual_network_subnet_name": "{{env `VNET_SUBNET`}}",
         "private_virtual_network_with_public_ip": "{{env `PRIVATE_VIRTUAL_NETWORK_WITH_PUBLIC_IP`}}",
         "allowed_inbound_ip_addresses": "{{env `AGENT_IP`}}",
-        "vm_size": "Standard_F8s_v2",
+        "vm_size": "Standard_D2_v2",
         "image_folder": "C:\\image",
         "imagedata_file": "C:\\imagedata.json",
         "helper_script_folder": "C:\\Program Files\\WindowsPowerShell\\Modules\\",
