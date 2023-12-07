@@ -47,9 +47,9 @@ packer build    -var "client_id=$ClientId" `
                 -var "subscription_id=$SubscriptionId" `
                 -var "temp_resource_group_name=$TempResourceGroupName" `
                 -var "tenant_id=$TenantId" `
-                -var "virtual_network_name=$VirtualNetworkName" `
-                -var "virtual_network_resource_group_name=$VirtualNetworkRG" `
-                -var "virtual_network_subnet_name=$VirtualNetworkSubnet" `
+                #-var "virtual_network_name=$VirtualNetworkName" `
+                #-var "virtual_network_resource_group_name=$VirtualNetworkRG" `
+                #-var "virtual_network_subnet_name=$VirtualNetworkSubnet" `
                 -color=false `
                 $TemplatePath `
         | Where-Object {
