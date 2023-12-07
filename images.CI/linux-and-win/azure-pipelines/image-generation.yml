@@ -22,7 +22,7 @@ parameters:
     type: object
     default:
       name: 'Azure Pipelines'
-
+    
   - name: variable_group_name
     type: string
     default: 'Image Generation Variables - DevChallenges'
@@ -40,7 +40,8 @@ jobs:
   displayName: Image Generation (${{ parameters.image_type }})
   timeoutInMinutes: 600
   cancelTimeoutInMinutes: 30
-  pool: ${{ parameters.agent_pool }}
+  pool:
+    vmImage: 'windows-latest'
   variables:
   - group: ${{ parameters.variable_group_name }}
 
