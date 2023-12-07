@@ -237,7 +237,6 @@
                 "{{ template_dir }}/../scripts/build/Install-Chrome.ps1",
                 "{{ template_dir }}/../scripts/build/Install-EdgeDriver.ps1",
                 "{{ template_dir }}/../scripts/build/Install-Firefox.ps1",
-                "{{ template_dir }}/../scripts/build/Install-Selenium.ps1",
                 "{{ template_dir }}/../scripts/build/Install-IEWebDriver.ps1",
                 "{{ template_dir }}/../scripts/build/Install-Apache.ps1",
                 "{{ template_dir }}/../scripts/build/Install-Nginx.ps1",
