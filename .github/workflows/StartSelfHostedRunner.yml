@@ -1,0 +1,24 @@
+on:
+  workflow_dispatch:
+
+name: Start Self-Hosted Runner
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Login via Az module
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS}}
+        enable-AzPSSession: true 
+        
+    - name: Run Azure PowerShell inline script
+      uses: azure/powershell@v1
+      with:
+        inlineScript: |
+          Get-AzSubscription ${{vars.AZURE_SUBSCRIPTION }} | Set-AzCOntext
+          Get-AzVM -ResourceGroupName ${{ vars.AZURE_RESOURCEGROUP }}
+        azPSVersion: "latest"
