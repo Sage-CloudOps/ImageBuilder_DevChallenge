@@ -20,5 +20,5 @@ jobs:
       with:
         inlineScript: |
           Get-AzSubscription ${{secrets.AZURE_CREDENTIALS.subscriptionId}} | Set-AzCOntext
-          Get-AzVM -ResourceGroupName ${{ vars.AZURE_RESOURCEGROUP }}
+          Start-AzVM -ResourceGroupName ${{vars.RUNNER_RESOURCE_GROUP}} -Name ${{vars.RUNNER_VM_NAME}} 
         azPSVersion: "latest"
