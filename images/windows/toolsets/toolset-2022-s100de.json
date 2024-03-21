@@ -1,0 +1,330 @@
+{
+  "toolcache": [
+    {
+      "name": "Ruby",
+      "arch": "x64",
+      "platform": "win32",
+      "versions": ["2.7", "3.0", "3.1"],
+      "default": "3.0"
+    },
+    {
+      "name": "Python",
+      "url": "https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json",
+      "arch": "x64",
+      "platform": "win32",
+      "versions": ["3.7.*", "3.8.*", "3.9.*", "3.10.*", "3.11.*", "3.12.*"],
+      "default": "3.9.*"
+    },
+    {
+      "name": "Python",
+      "url": "https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json",
+      "arch": "x86",
+      "platform": "win32",
+      "versions": ["3.7.*", "3.8.*", "3.9.*", "3.10.*", "3.11.*", "3.12.*"]
+    },
+    {
+      "name": "PyPy",
+      "arch": "x86",
+      "platform": "win64",
+      "versions": ["2.7", "3.7", "3.8", "3.9", "3.10"]
+    },
+    {
+      "name": "node",
+      "url": "https://raw.githubusercontent.com/actions/node-versions/main/versions-manifest.json",
+      "arch": "x64",
+      "platform": "win32",
+      "versions": ["16.*", "18.*", "20.*"]
+    },
+    {
+      "name": "go",
+      "url": "https://raw.githubusercontent.com/actions/go-versions/main/versions-manifest.json",
+      "arch": "x64",
+      "platform": "win32",
+      "versions": ["1.19.*", "1.20.*", "1.21.*"],
+      "default": "1.20.*"
+    }
+  ],
+  "powershellModules": [
+    { "name": "DockerMsftProvider" },
+    { "name": "MarkdownPS" },
+    { "name": "Pester" },
+    { "name": "PowerShellGet" },
+    { "name": "PSScriptAnalyzer" },
+    { "name": "PSWindowsUpdate" },
+    { "name": "SqlServer" },
+    { "name": "VSSetup" },
+    { "name": "Microsoft.Graph" },
+    { "name": "AWSPowershell" }
+  ],
+  "azureModules": [
+    {
+      "name": "azurerm",
+      "versions": ["2.1.0", "6.13.1"],
+      "zip_versions": ["3.8.0", "4.2.1", "5.1.1", "6.7.0"],
+      "default": "2.1.0"
+    },
+    {
+      "name": "azure",
+      "versions": ["2.1.0", "5.3.0"],
+      "zip_versions": ["3.8.0", "4.2.1", "5.1.1"],
+      "default": "2.1.0"
+    },
+    {
+      "name": "az",
+      "versions": ["9.3.0"],
+      "zip_versions": ["7.5.0"]
+    }
+  ],
+  "java": {
+    "default": "8",
+    "versions": ["8", "11", "17", "21"]
+  },
+  "android": {
+    "commandline_tools_url": "https://dl.google.com/android/repository/commandlinetools-win-9123335_latest.zip",
+    "hash": "8A90E6A3DEB2FA13229B2E335EFD07687DCC8A55A3C544DA9F40B41404993E7D",
+    "platform_min_version": "27",
+    "build_tools_min_version": "27.0.0",
+    "extras": [
+      "android;m2repository",
+      "google;m2repository",
+      "google;google_play_services"
+    ],
+    "addons": [],
+    "additional_tools": ["cmake;3.18.1", "cmake;3.22.1"],
+    "ndk": {
+      "default": "25",
+      "versions": ["24", "25", "26"]
+    }
+  },
+  "mingw": {
+    "version": "12.2.0",
+    "runtime": "ucrt"
+  },
+  "MsysPackages": {
+    "msys2": [],
+    "mingw": []
+  },
+  "windowsFeatures": [
+    { "name": "Containers" },
+    { "name": "Microsoft-Windows-Subsystem-Linux", "optionalFeature": true },
+    { "name": "VirtualMachinePlatform", "optionalFeature": true },
+    { "name": "NET-Framework-Core", "includeAllSubFeatures": true },
+    { "name": "NET-Framework-45-Features", "includeAllSubFeatures": true },
+    { "name": "Client-ProjFS", "optionalFeature": true },
+    { "name": "NET-Framework-Features", "includeAllSubFeatures": true },
+    { "name": "Hyper-V", "includeAllSubFeatures": true },
+    { "name": "HypervisorPlatform", "optionalFeature": true },
+    { "name": "Hyper-V-PowerShell" }
+  ],
+  "visualStudio": {
+    "version": "2019",
+    "subversion": "16",
+    "edition": "Enterprise",
+    "channel": "release",
+    "signature": "72105B6D5F370B62FD5C82F1512F7AD7DEE5F2C0",
+    "workloads": [
+      "Microsoft.VisualStudio.Component.CoreEditor",
+      "Microsoft.VisualStudio.Workload.CoreEditor",
+      "Microsoft.VisualStudio.Component.NuGet",
+      "Microsoft.Net.Component.4.6.1.TargetingPack",
+      "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+      "Microsoft.VisualStudio.Component.Roslyn.LanguageServices",
+      "Microsoft.VisualStudio.Component.FSharp",
+      "Microsoft.ComponentGroup.ClickOnce.Publish",
+      "Microsoft.NetCore.Component.DevelopmentTools",
+      "Microsoft.VisualStudio.Component.FSharp.WebTemplates",
+      "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions",
+      "Microsoft.VisualStudio.Component.DockerTools",
+      "Microsoft.NetCore.Component.Web",
+      "Microsoft.Net.Component.4.8.SDK",
+      "Microsoft.Net.Component.4.7.2.TargetingPack",
+      "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites",
+      "Microsoft.VisualStudio.Component.TypeScript.4.3",
+      "Microsoft.VisualStudio.Component.JavaScript.TypeScript",
+      "Microsoft.VisualStudio.Component.JavaScript.Diagnostics",
+      "Microsoft.Component.MSBuild",
+      "Microsoft.VisualStudio.Component.TextTemplating",
+      "Component.Microsoft.VisualStudio.RazorExtension",
+      "Microsoft.VisualStudio.Component.IISExpress",
+      "Microsoft.VisualStudio.Component.SQL.ADAL",
+      "Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime",
+      "Microsoft.VisualStudio.Component.Common.Azure.Tools",
+      "Microsoft.VisualStudio.Component.SQL.CLR",
+      "Microsoft.VisualStudio.Component.MSODBC.SQL",
+      "Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils",
+      "Microsoft.VisualStudio.Component.ManagedDesktop.Core",
+      "Microsoft.Net.Component.4.5.2.TargetingPack",
+      "Microsoft.Net.Component.4.5.TargetingPack",
+      "Microsoft.VisualStudio.Component.SQL.SSDT",
+      "Microsoft.VisualStudio.Component.SQL.DataSources",
+      "Component.Microsoft.Web.LibraryManager",
+      "Component.Microsoft.WebTools.BrowserLink.WebLivePreview",
+      "Microsoft.VisualStudio.ComponentGroup.Web",
+      "Microsoft.VisualStudio.Component.Web",
+      "Microsoft.VisualStudio.ComponentGroup.Web.Client",
+      "Microsoft.Net.Component.4.TargetingPack",
+      "Microsoft.Net.Component.4.5.1.TargetingPack",
+      "Microsoft.Net.Component.4.6.TargetingPack",
+      "Microsoft.Net.ComponentGroup.TargetingPacks.Common",
+      "Component.Microsoft.VisualStudio.Web.AzureFunctions",
+      "Microsoft.VisualStudio.ComponentGroup.AzureFunctions",
+      "Microsoft.VisualStudio.Component.Azure.Compute.Emulator",
+      "Microsoft.VisualStudio.Component.Azure.Storage.Emulator",
+      "Microsoft.VisualStudio.Component.Azure.ClientLibs",
+      "Microsoft.VisualStudio.Component.Azure.AuthoringTools",
+      "Microsoft.VisualStudio.Component.CloudExplorer",
+      "Microsoft.VisualStudio.ComponentGroup.Web.CloudTools",
+      "Microsoft.VisualStudio.Component.AspNet45",
+      "Microsoft.VisualStudio.Component.WebDeploy",
+      "Microsoft.NetCore.Component.Runtime.3.1",
+      "Microsoft.NetCore.Component.Runtime.5.0",
+      "Microsoft.NetCore.Component.SDK",
+      "Microsoft.VisualStudio.Component.Wcf.Tooling",
+      "Microsoft.Net.Component.4.8.TargetingPack",
+      "Microsoft.Net.ComponentGroup.4.8.DeveloperTools",
+      "Microsoft.Net.Core.Component.SDK.2.1",
+      "Microsoft.VisualStudio.Workload.NetWeb",
+      "Microsoft.VisualStudio.Component.Azure.Powershell",
+      "Microsoft.VisualStudio.Component.VC.CoreIde",
+      "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+      "Microsoft.VisualStudio.Component.Graphics.Tools",
+      "Microsoft.VisualStudio.Component.VC.DiagnosticTools",
+      "Microsoft.VisualStudio.Component.Windows10SDK.19041",
+      "Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites",
+      "Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging",
+      "Microsoft.VisualStudio.Workload.ManagedDesktop",
+      "Microsoft.VisualStudio.Component.VC.Redist.14.Latest",
+      "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core",
+      "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake",
+      "Microsoft.VisualStudio.Component.VC.CMake.Project",
+      "Microsoft.VisualStudio.Component.VC.ATL",
+      "Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest",
+      "Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest",
+      "Microsoft.VisualStudio.Component.VC.ATLMFC",
+      "Microsoft.VisualStudio.Component.Windows10SDK.18362",
+      "Microsoft.VisualStudio.Component.Windows10SDK.17763",
+      "Microsoft.VisualStudio.Component.Windows10SDK.17134",
+      "Microsoft.VisualStudio.Component.VC.v141.x86.x64",
+      "Microsoft.Component.VC.Runtime.UCRTSDK",
+      "Microsoft.VisualStudio.Component.VC.140",
+      "Microsoft.VisualStudio.Workload.NativeDesktop"
+    ],
+    "vsix": [
+      "SSIS.MicrosoftDataToolsIntegrationServices",
+      "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects",
+      "WixToolset.WixToolsetVisualStudio2022Extension",
+      "ProBITools.MicrosoftReportProjectsforVisualStudio2022",
+      "ProBITools.MicrosoftAnalysisServicesModelingProjects2022"
+    ]
+  },
+  "docker": {
+    "images": [
+      "mcr.microsoft.com/windows/servercore:ltsc2022",
+      "mcr.microsoft.com/windows/nanoserver:ltsc2022",
+      "mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022",
+      "mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022",
+      "mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022"
+    ]
+  },
+  "pipx": [
+    {
+      "package": "yamllint",
+      "cmd": "yamllint --version"
+    }
+  ],
+  "selenium": {
+    "version": "4"
+  },
+  "npm": {
+    "global_packages": [
+      { "name": "yarn", "test": "yarn --version" },
+      { "name": "newman", "test": "newman --version" },
+      { "name": "lerna", "test": "lerna --version" },
+      { "name": "gulp-cli", "test": "gulp --version" },
+      { "name": "grunt-cli", "test": "grunt --version" }
+    ]
+  },
+  "serviceFabric": {
+    "runtime": {
+      "version": "9.1.1436.9590",
+      "signature": "AFBF0B8B6A18F7E23CCA1DDCD0AC1A55B4035173"
+    },
+    "sdk": {
+      "version": "6.1.1436",
+      "signature": "AFBF0B8B6A18F7E23CCA1DDCD0AC1A55B4035173"
+    }
+  },
+  "dotnet": {
+    "versions": ["6.0", "7.0"],
+    "tools": [
+      {
+        "name": "nbgv",
+        "test": "nbgv --version",
+        "getversion": "nbgv --version"
+      }
+    ],
+    "warmup": false
+  },
+  "choco": {
+    "common_packages": [
+      { "name": "7zip.install" },
+      { "name": "aria2" },
+      { "name": "azcopy10" },
+      { "name": "Bicep" },
+      { "name": "innosetup" },
+      { "name": "jq" },
+      { "name": "NuGet.CommandLine" },
+      { "name": "packer" },
+      {
+        "name": "strawberryperl",
+        "args": ["--version", "5.32.1.1"]
+      },
+      { "name": "pulumi" },
+      { "name": "tortoisesvn" },
+      { "name": "swig" },
+      { "name": "vswhere" },
+      {
+        "name": "julia",
+        "args": ["--ia", "/DIR=C:\\Julia"]
+      },
+      {
+        "name": "cmake.install",
+        "args": ["--installargs", "ADD_CMAKE_TO_PATH=\"System\""]
+      },
+      { "name": "imagemagick" }
+    ]
+  },
+  "node": {
+    "default": "18"
+  },
+  "maven": {
+    "version": "3.8"
+  },
+  "mysql": {
+    "version": "8.0",
+    "signature": "DD34D7C71F160972DE0CE25B695A0D6A9C95BD91"
+  },
+  "mongodb": {
+    "version": "5.0",
+    "signature": "F2D7C28591847BB2CB2B1C2A0C59459FDC728A38"
+  },
+  "nsis": {
+    "version": "3.09"
+  },
+  "llvm": {
+    "version": "16"
+  },
+  "php": {
+    "version": "8.2"
+  },
+  "postgresql": {
+    "version": "14",
+    "signature": "698BA51AA27CC31282AACA5055E4B9190BC6C0E9"
+  },
+  "kotlin": {
+    "version": "latest"
+  },
+  "openssl": {
+    "version": "1.1.1"
+  }
+}

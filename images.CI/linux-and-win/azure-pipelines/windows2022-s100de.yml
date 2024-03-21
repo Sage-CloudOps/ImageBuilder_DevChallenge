@@ -1,0 +1,13 @@
+trigger: none
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - main
+
+jobs:
+  - template: image-generation.yml
+    parameters:
+      image_type: windows2022
+      image_readme_name: Windows2022-S100DE-Readme.md
+      image_template_name: windows-2022-s100de.json
